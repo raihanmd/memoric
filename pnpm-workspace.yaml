@@ -1,0 +1,4 @@
+onlyBuiltDependencies:
+  - near-sandbox
+  - near-sdk-js
+  - near-workspaces

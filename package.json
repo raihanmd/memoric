@@ -1,12 +1,12 @@
 {
-  "name": "hello_near",
+  "name": "memoric",
   "version": "1.0.0",
   "license": "(MIT AND Apache-2.0)",
   "type": "module",
   "scripts": {
-    "deploy": "pnpm build && /home/kali/.local/share/pnpm/global/5/.pnpm/near-cli-rs@0.20.0/node_modules/near-cli-rs/node_modules/.bin_real/near contract deploy lynx-contract.testnet use-file ./build/hello_near.wasm without-init-call network-config testnet sign-with-legacy-keychain send",
-    "build": "near-sdk-js build src/contract.ts build/hello_near.wasm",
-    "test": "$npm_execpath run build && ava -- ./build/hello_near.wasm"
+    "deploy": "pnpm build && /home/kali/.local/share/pnpm/global/5/.pnpm/near-cli-rs@0.20.0/node_modules/near-cli-rs/node_modules/.bin_real/near contract deploy lynx-contract.testnet use-file ./build/memoric.wasm without-init-call network-config testnet sign-with-legacy-keychain send",
+    "build": "near-sdk-js build src/contract.ts build/memoric.wasm",
+    "test": "$npm_execpath run build && ava -- ./build/memoric.wasm"
   },
   "dependencies": {
     "near-sdk-js": "2.0.0"
